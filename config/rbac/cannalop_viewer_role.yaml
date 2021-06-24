@@ -1,0 +1,20 @@
+# permissions for end users to view cannalops.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: cannalop-viewer-role
+rules:
+- apiGroups:
+  - v1.com.cannal
+  resources:
+  - cannalops
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - v1.com.cannal
+  resources:
+  - cannalops/status
+  verbs:
+  - get

@@ -1,0 +1,13 @@
+apiVersion: v1.com.cannal/v1
+kind: Cannalop
+metadata:
+  name: cannalop-1
+spec:
+  # Add fields here
+  image: canal/canal-server:v1.1.4
+  db_username: eee
+  db_password: qwer
+  topic_name: topic1
+  kafka_url: xxx
+  replications: 3
+  service_port:  30001
